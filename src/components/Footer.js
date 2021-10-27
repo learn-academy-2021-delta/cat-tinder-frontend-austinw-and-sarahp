@@ -1,0 +1,21 @@
+import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
+
+class Footer extends Component{
+  render(){
+    return(
+      <>
+        <ul>
+          <NavLink to="/">&copy; 2021 Sarah & Austin</NavLink>
+        </ul>
+        <ul>
+          <NavLink to="/catindex">Meet All the Cats</NavLink>
+        </ul>
+        <ul>
+          <NavLink to="/catnew">Add a Cat</NavLink>
+        </ul>
+      </>
+    )
+  }
+}
+export default Footer
