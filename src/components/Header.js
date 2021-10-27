@@ -16,6 +16,9 @@ class Header extends Component {
           <ul>
             <NavLink to="/catnew">Add a Cat</NavLink>
           </ul>
+          <ul>
+            <a target='blank'href="https://www.aspca.org/adopt-pet/adoptable-cats-your-local-shelter" id="aspca">Adopt a Cat!</a>
+          </ul>
         </div>
       </header>
     )

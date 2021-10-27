@@ -24,7 +24,7 @@ class App extends Component {
     }
   }
   render() {
-    console.log(this.state.cats)
+    // console.log(this.state.cats)
     return (
       <Router>
         <Header />
@@ -37,6 +37,7 @@ class App extends Component {
           <Route component={NotFound} />
         </Switch>
         <Footer />
+        
       </Router>
     )
   }
