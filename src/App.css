@@ -34,7 +34,7 @@ header {
 }
 
 /* ---FOOTER--- */
-/* footer {
+footer {
   font-size: 20px;
   position: fixed;
   bottom: 0;
@@ -51,4 +51,4 @@ a:hover {
   cursor: pointer !important;
   color: #FF0080 !important;
   text-decoration: underline !important;
-} */
+}
