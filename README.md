@@ -17,3 +17,52 @@ Frontend Structure
 - Added mock cats
 - Added routes to each page
 - Styled Header, Footer, NotFound
+
+
+Testing with Jest Enzyme
+- Jest, built by Facebook
+- Enzyme, built by AirBnb
+
+- Jest is our test runner and our assertion library
+- Enzyme is brining in added utilities and live rendering of React nodes
+
+Testing Commands
+`$ yarn test`
+`$ yarn add -D enzyme react-test-renderer enzyme-adapter-react-16`
+
+Testing Imports and configurations
+```javascript
+import React from 'react'
+import Enzyme, { shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+
+Enzyme.configure({ adapter: new Adapter() })
+```
+Testing Syntax Example
+```javascript
+describe("",()=>{
+    it("",()=>{
+        const renderedVariableName = shallow(<Component/>)
+        const thingBeingLookedFor = renderedVariableName.find("[attribute]")
+        const otherThingBeingLookedFor = renderedVariableName.find("ComponentName")
+        expect(thingBeingLookedFor.props().component).toEqual(SomeComponent)    
+        expect(otherThingBeingLookedFor.length).toEqual(1)
+    })
+})
+```
+Selector Syntax
+
+- [Enzyme Selector Docs](https://enzymejs.github.io/enzyme/docs/api/selector.html)
+
+Assertion Syntax
+```javascript
+    expect(<componentVariable>.<elementQueryMethod>()).<matcher>(<expectedValue>)
+```
+```javascript
+    expect(<actualThing>).<matcher>(<expectedValue>)
+```
+
+Helpful Methods 
+
+- .debug()
+- .props()
