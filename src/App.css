@@ -26,6 +26,17 @@ header {
   padding-right: 50px;
 }
 
+/* ---NAV--- */
+a {
+  color: #FF0080 !important;
+  text-decoration: none !important;
+}
+a:hover {
+  cursor: pointer !important;
+  color: #FF0080 !important;
+  text-decoration: underline !important;
+}
+
 /* ---NOT FOUND--- */
 .cat-friend {
   width: 400px;
@@ -42,13 +53,4 @@ footer {
   background-color: #FFFEF1;
   display: flex;
   justify-content: space-around;
-}
-a {
-  color: #FF0080 !important;
-  text-decoration: none !important;
-}
-a:hover {
-  cursor: pointer !important;
-  color: #FF0080 !important;
-  text-decoration: underline !important;
 }
