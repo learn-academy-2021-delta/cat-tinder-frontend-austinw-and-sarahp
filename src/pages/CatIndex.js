@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 class CatIndex extends Component {
   render() {
     return (
       <>
-        <h3>I am the Cat Index</h3>
+        <h3>Meet our Cat Friends</h3>
+        {this.props.cats && this.props.cats.map(cat => {
+          return (
+            <p key={cat.id}>
+              <NavLink to={`/catshow/${cat.id}`}>
+                {cat.name}
+              </NavLink>
+            </p>
+          )
+        })}
       </>
     )
   }

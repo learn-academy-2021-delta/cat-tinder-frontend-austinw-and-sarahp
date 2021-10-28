@@ -22,13 +22,12 @@ Frontend Structure
 Testing with Jest Enzyme
 - Jest, built by Facebook
 - Enzyme, built by AirBnb
-
 - Jest is our test runner and our assertion library
 - Enzyme is brining in added utilities and live rendering of React nodes
 
 Testing Commands
-`$ yarn test`
-`$ yarn add -D enzyme react-test-renderer enzyme-adapter-react-16`
+- `$ yarn test`
+- `$ yarn add -D enzyme react-test-renderer enzyme-adapter-react-16`
 
 Testing Imports and configurations
 ```javascript
@@ -62,7 +61,13 @@ Assertion Syntax
     expect(<actualThing>).<matcher>(<expectedValue>)
 ```
 
-Helpful Methods 
-
+Helpful Methods
 - .debug()
 - .props()
+
+
+Read Functionality
+- Refactored the static index route to be a dynamic route
+- Passed the state object (cats) into CatIndex
+- Added tests for CatIndex
+- Needed to run `yarn` since I didn't have the local test dependencies
