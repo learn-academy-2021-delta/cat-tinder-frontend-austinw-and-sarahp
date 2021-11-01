@@ -6,13 +6,15 @@ import notCat from '../assets/not-cat.jpeg'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe("When NotFound loads",() => {
+describe("When NotFound renders",() => {
   it("displays a header", () => {
     const notFound = shallow(<NotFound/>)
-    expect(notFound.find("h3").text()).toEqual("Ooops, no cats here!")
+    const notFoundHeader = notFound.find("h3")
+    expect(notFoundHeader.text()).toEqual("Ooops, no cats here!")
   })
   it("displays an image",() => {
     const notFound = shallow(<NotFound/>)
-    expect(notFound.find("img").prop("src")).toEqual(notCat)
+    const notFoundImage = notFound.find("img")
+    expect(notFoundImage.prop("src")).toEqual(notCat)
   })
 })

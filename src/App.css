@@ -3,10 +3,44 @@
   padding: 0;
   font-family: 'Neucha', cursive;
 }
+/* ---GENERAL PAGE FORMATING--- */
 .page-body {
   text-align: center;
   margin: 3rem;
   height: 110vh;
+}
+/* ---GENERAL BUTTON FORMATING--- */
+.btn.btn-secondary {
+  background-color: #FF0080;
+  font-weight: bolder;
+  margin: 5px;
+}
+.btn.btn-secondary:hover {
+  color: #FF0080;
+  background-color: white;
+}
+
+/* ---FOOTER--- */
+footer {
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFFEF1;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ---FORMS--- */
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+input {
+  text-align: center;
+}
+div.form-group {
+  margin-bottom: 15px;
 }
 
 /* ---HEADER--- */
@@ -24,6 +58,25 @@ header {
   flex-direction: row;
   align-items: flex-end;
   padding-right: 50px;
+}
+
+/* ---HOME--- */
+.raisins {
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+/* ---INDEX--- */
+.index-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card.card-body {
+  width: 300px;
+  background-color: #FFFEF1;
+  margin: 20px;
 }
 
 /* ---NAV--- */
@@ -44,13 +97,7 @@ a:hover {
   border-radius: 10px;
 }
 
-/* ---FOOTER--- */
-footer {
-  font-size: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #FFFEF1;
-  display: flex;
-  justify-content: space-around;
+/* ---SHOW--- */
+.card-show.card.card-body {
+  margin: 0 auto;
 }
