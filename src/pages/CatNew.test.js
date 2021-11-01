@@ -6,6 +6,11 @@ import CatNew from './CatNew'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("When CatNew renders", () => {
+  it("displays a heading", () => {
+    const catNew = shallow(<CatNew />)
+    const newheading = catNew.find("h3")
+    expect(newheading.text()).toEqual("Add a New Cat")
+  })
   it("displays a form", () => {
     const catNew = shallow(<CatNew />)
     const formGroup = catNew.find("FormGroup")

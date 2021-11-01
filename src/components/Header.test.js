@@ -5,15 +5,15 @@ import Header from './Header'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('When Header loads...',() => {
-  it('displays three NavLinks', () => {
-    const headerWrapper = shallow(<Header/>)
-    const navLinkWrapper = headerWrapper.find("NavLink")
-    expect(navLinkWrapper.length).toEqual(3)
+describe("When Header loads",() => {
+  it("displays NavLinks", () => {
+    const header = shallow(<Header/>)
+    const navLink = header.find("NavLink")
+    expect(navLink.length).toEqual(3)
   })
-  it('provides a link to the local ASPCA',() => {
-    const headerWrapper = shallow(<Header/>)
-    const aTagWrapper = headerWrapper.find('[id="aspca"]')
-    expect(aTagWrapper.length).toEqual(1)
+  it("provides a link to the local ASPCA",() => {
+    const header = shallow(<Header/>)
+    const navLink = header.find('[id="aspca"]')
+    expect(navLink.length).toEqual(1)
   })
 })
