@@ -26,11 +26,7 @@ class App extends Component {
   componentDidMount(){
     this.readCat()
   }
-    // fetch returns a promise to us
-    // promise is javascript object
-    // 3 different states
-    // pending -- fulfilled -- rejected
-    // fulfilled comes with a payload
+
   
   readCat = () => {
     fetch("http://localhost:3000/cats")

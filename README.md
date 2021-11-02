@@ -71,3 +71,20 @@ Read Functionality
 - Passed the state object (cats) into CatIndex
 - Added tests for CatIndex
 - Needed to run `yarn` since I didn't have the local test dependencies
+
+
+Fetch 
+- Fetch takes an argument of a URL
+    - this URL "points" to an Endpoint
+- fetch() returns a promise to us.
+    - A promise is a Javascript object that can one of three states: Pending, Fulfilled, or Rejected.
+    - When a promise is fulfilled it comes with a payload (of data)
+- Fetch can take a second argument of an object
+    - this object has three keys
+        - body : The data that we are sending
+        - headers : the kind of data
+        - method: the HTTP verb that is associated with the desired endpoint
+- .then()
+    - we can chain .then() on to the fetch to get the response
+    - we can chain a .then() onto the response  to receive the payload
+    - we use .catch() to catch a rejected promise and we use it to log our errors
