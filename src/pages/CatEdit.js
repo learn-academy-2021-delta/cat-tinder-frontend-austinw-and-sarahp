@@ -22,10 +22,11 @@ class CatEdit extends Component {
   }
 
   handleSubmit = () => {
-    this.props.updateCat(this.state.form)
+    this.props.updateCat(this.state.form, this.props.id)
     this.setState({submitted: true})
   }
   render() {
+    
     return (
       <div className="page-body">
         <h3>Update Cat Information</h3>
